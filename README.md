@@ -51,6 +51,11 @@ model = DQN.load("logs/dqn_flappy/dqn_ckpt_50000_steps.zip", env=vec_env)
 model.learn(total_timesteps=200000)
 ```
 
+## Technical Report
+For a detailed analysis of the DQN architecture, reward shaping strategies, results, and hyperparameter tuning used in this project, check out the full report:
+
+[Read the Technical Report (PDF)](./docs/DQN_Flappy_Bird_Technical_Report.pdf)
+
 ## Notes / Reproducibility
 - On macOS M1, an incompatible TensorFlow wheel caused segfaults during development; remove `tensorflow` from the env if you encounter crashes (assuming you have it in the env).
 

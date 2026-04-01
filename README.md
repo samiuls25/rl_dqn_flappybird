@@ -1,6 +1,13 @@
-# RL_DQN_flappybird
+# Training a DQN Agent to Play Flappy Bird
 
 This project trains an autonomous agent to play Flappy Bird using a Gymnasium-compatible (`flappy-bird-gymnasium`) environment and a Deep Q‑Learning (DQN) algorithm (with Stable‑Baselines3). The goal is simple: teach an agent to keep the bird alive and pass pipes by maximizing a reward signal provided by the environment (small reward per frame alive, bonus for passing pipes, penalty for collisions). The project emphasizes reproducible training, clear logging of progress, and simple evaluation so that learning behavior can be demonstrated with charts and short gameplay. The end result is a saved DQN policy that can be evaluated deterministically and compared across training checkpoints to show improvement.
+
+## Training Evolution
+
+| Early Training (200k Steps) | Advanced Training (3M Steps) |
+| :---: | :---: |
+| ![200k_rlflappy](https://github.com/user-attachments/assets/377d3381-bb04-4f3c-b3fe-5ab3d43fda91)| ![3M_rlflappy](https://github.com/user-attachments/assets/d23ae823-c11a-4229-84fb-e1ace9223c7b)|
+| Agent crashes before first pipe | Agent navigates multiple pipes |
 
 ## Quick overview
 - Environment: `FlappyBird-v0` (numeric observations; LIDAR or pipe/player features)
